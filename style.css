@@ -1,0 +1,118 @@
+
+img.slide{
+   height: 650px;
+}
+.ani 
+{
+   text-align: center;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #A8EB12 23%,
+    #44107a 29%,
+    #86A8E7 30%,
+    #D16BA5 30%,
+    #5FFBF1 30%,
+    #ff1361 67%,
+    white   92%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 70px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+
+<!--glow-->
+.nav-text{
+      background-color:white;
+      -webkit-border-radius: 60px;
+      border-radius: 50%;
+      border: none;
+      color: #eeeeee;
+      cursor: pointer;
+      display: inline-block;
+      font-family: sans-serif;
+      font-size: 16px;
+      padding: 5px 15px;
+      text-align: center;
+      text-decoration: none;
+    }
+    @keyframes glowing {
+      0% {
+        background-color:  #49e819;
+        box-shadow: 0 0 5px red;
+      }
+      50% {
+        background-color: #49e819;
+        box-shadow: 0 0 20px darkred;
+      }
+      100% {
+        background-color: #2ba805;
+        box-shadow: 0 0 5px blue;
+      }
+      30% {
+         background-color: chartreuse;
+         box-shadow: 0 0 20px orangered;
+       }
+    }
+    .nav-text {
+      animation: glowing 1300ms infinite;
+    }
+    @keyframes borderAnimation {
+      0% { border-color: #007bff; }
+      50% { border-color: #28a745; }
+      100% { border-color: #007bff; }
+      64% { border-color:  #86A8E7 ; }
+      50% { border-color: #D16BA5 ; }
+      10% { border-color: #5FFBF1; }
+      70% { border-color: #ff1361; }
+      66% { border-color:  white ; }
+      30% { border-color: blue ; }
+      33% { border-color:yellow; }
+      
+    }
+
+    .animated-border {
+      border: 16em solid #007bff;
+      animation: borderAnimation 5s infinite;
+    }
+  
+    body {
+      background-color: black;
+      font-family: cursive;
+    }
+    
+    .glow {
+      font-size: 30px;
+      color: #fff;
+      text-align: center;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px gold, 0 0 30px #e60073, 0 0 40px yellow, 0 0 50px #e60073, 0 0 60px green, 0 0 70px #e60073;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px red, 0 0 50px chartreuse, 0 0 60px blue, 0 0 70px #ff4da6, 0 0 80px darkorange;
+      }
+    }
